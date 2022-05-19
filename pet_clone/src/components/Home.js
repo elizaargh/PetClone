@@ -1,12 +1,13 @@
+import Navigation from "./Navigation";
 import SubscribeHome from "./SubscribeHome";
 import Footer from "./Footer";
 
 const Home = (props) => {
   return (
     <div>
-        <SubscribeHome/>
-        <Footer />
-
+      <Navigation />
+      <SubscribeHome/>
+      <Footer />
     </div>
   );
 }

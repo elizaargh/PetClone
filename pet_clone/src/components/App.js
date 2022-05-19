@@ -7,15 +7,10 @@ import Home from "./Home";
 function App() {
   return (
     <div className="App">
-      Page coming soon.
-   
-    <JoinUs/>
-    <Thanks/>
-    <EmailPref/>
-      {/* <DiscountBanner/> */}
+      <JoinUs/>
+      <Thanks/>
+      <EmailPref/>
       <Home />
-  
-
     </div>
   );
 }
