@@ -1,10 +1,10 @@
-import SubscribeForm from "./SubscribeForm";
+import SubscribeHome from "./SubscribeHome";
 import Footer from "./Footer";
 
 const Home = (props) => {
   return (
     <div>
-        <SubscribeForm/>
+        <SubscribeHome/>
         <Footer />
 
     </div>
