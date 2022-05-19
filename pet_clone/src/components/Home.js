@@ -1,7 +1,8 @@
 import SubscribeBanner from "./SubscribeBanner";
 import Navigation from "./Navigation";
 import Heading1 from "../heading1.svg"
-import SubscribeHome from "./SubscribeHome";
+import SubscribeFooter from "./SubscribeFooter";
+import MiddleDiv from './MiddleDiv';
 import Footer from "./Footer";
 
 const Home = (props) => {
@@ -10,7 +11,8 @@ const Home = (props) => {
       <SubscribeBanner />
       <Navigation />
       <img src={Heading1} width="500" height="500" />
-      <SubscribeHome/>
+      <MiddleDiv/>
+      <SubscribeFooter/>
       <Footer />
     </div>
   );
