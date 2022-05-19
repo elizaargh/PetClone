@@ -1,12 +1,66 @@
 *{
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+div {
+  text-align: center;
+}
+
+.invisible {
+  visibility: visible;
+  background-color: white;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+.newsletter-banner{
+  background-color: azure;
+  padding: 0.5em;
+}
+
+.user-avatar {
+  position: absolute;
+  width: 80%;
+ 
+}
+
+.my-pet {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding-top: 2%;
+  line-height: 100%;
+}
+
+.doggy {
+  display: inline-block;
+}
+
+.square-filler {
+  background-color: rgb(211, 189, 255);
+  width: 100%;
+  height: 50vh;
+  margin-top: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 3em;
+}
+.square-filler-3 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 65vh;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 3em;
 }
 
 .modalHome {
     font-size: 16px;
     width: 100%;
-    border: solid black 1px;
-    height: 100vh;
+    height: 50vh;
     margin: 0 auto;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
@@ -22,6 +76,7 @@
     text-align: center;
     padding-top: 20px;
     margin-bottom: -20px;
+    
   }
   .modalHome > .content {
     width: 100%;

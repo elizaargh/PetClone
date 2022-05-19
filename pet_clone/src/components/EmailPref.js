@@ -22,7 +22,7 @@ const EmailPref = () => {
             <div className="content">
             {' '}
             How often do you want to hear from us?
-            <br /> 
+            <br /> <br/>
             <select name="selectTimes">
                 <option>Weekly</option>
                 <option>Fortnightly</option>
@@ -38,14 +38,19 @@ const EmailPref = () => {
             <br />
                <div className="checkers"> 
                     <Checkbox bigger color="primary">Everything</Checkbox>
-                    <Checkbox bigger>Promotions</Checkbox>
+                    <Checkbox bigger animation="pulse" color="info-o">Promotions</Checkbox>
                     <br />
-                    <Checkbox bigger>Pet Blog</Checkbox>
-                    <Checkbox bigger>DIY tips</Checkbox>
+                    <Checkbox bigger color="warning">Pet Blog</Checkbox>
+                    <Checkbox bigger animation="pulse" color="warning">DIY tips</Checkbox>
                 </div> 
-                <br />
-                <div className="subscribe">  <button className="subscribeButton">Subscribe</button></div>
-            </div>
+                <br /> 
+                <input className="invisible"></input><input className="invisible"></input>
+                <input name="email" className="email-invisble" placeholder="email"></input>
+                <div className="subscribe">  
+                    <button className="subscribeButton">Subscribe</button>
+                </div>
+              
+                </div>
        
         )}
     </Popup>

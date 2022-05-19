@@ -1,8 +1,8 @@
 const SubscribeBanner = (props) => {
     return (
         <a href="#">
-            <div>
-                <h1>Subscribe to stay updated with us!</h1>
+            <div className="newsletter-banner">
+                <a href="#">Subscribe to our newsletter!</a>
             </div>
         </a>
     );

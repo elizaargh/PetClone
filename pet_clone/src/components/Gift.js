@@ -29,6 +29,7 @@ const Gift = () => {
             
             <div className="subscribe">  <button className="subscribeButton">Continue Shopping</button></div>
             <div className="actions">
+            
           
             </div>
         </div>
