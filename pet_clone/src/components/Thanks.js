@@ -13,10 +13,11 @@ const Thanks = () => {
     >
         {close => (
         <div className="modal">
-            
-            <div className="header"><button className="close" onClick={close}>
+            <button className="close" onClick={close}>
             &times;
-            </button> <h2> Thanks "Name"</h2></div>
+            </button>
+            
+            <div className="header"> <h2> Thanks "Name"</h2></div>
             <div className="content">
             {' '}
            You are now subscribed to hear about us. 

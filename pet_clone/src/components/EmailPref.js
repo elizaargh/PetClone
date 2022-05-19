@@ -15,10 +15,10 @@ const EmailPref = () => {
     >
         {close => (
         <div className="modal">
-            
-            <div className="header"><button className="close" onClick={close}>
+            <button className="close" onClick={close}>
             &times;
-            </button> <h2> Set Email Preferences</h2></div>
+            </button>
+            <div className="header"><h2> Set Email Preferences</h2></div>
             <div className="content">
             {' '}
             How often do you want to hear from us?

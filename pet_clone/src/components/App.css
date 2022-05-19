@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+.modalHome {
+    font-size: 16px;
+    width: 100%;
+    border: solid black 1px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2D066;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+  }
+  .modalHome > .header {
+    width: 100%;
+    border-bottom: 1px solid rgba(202, 0, 0, 0);
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: -20px;
+  }
+  .modalHome > .content {
+    width: 100%;
+    padding: 0px 5px;
+    text-align: center;
+  }
+  
+  input {
+    width: 50%;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1em;
+    margin-top: -10px;
+    border-style: solid;
+  }
+
+input:focus {
+    outline: none !important;
+}
+
+  .email {
+      width: 100%;
+      padding-top: 2;
+      background-color: rgb(255, 255, 255);
+  }
+  .modalHome > .subscribe {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 0 auto;
+    text-align: center;
+ 
+    
+  }
+
+ .subscribeButton {
+    background-color: #6E2594;
+    border: none;
+    color: white;
+    padding: 1em 1em;
+    margin-bottom: 1.5em;
+    font-family: 'Poppins', sans-serif;
+  }
