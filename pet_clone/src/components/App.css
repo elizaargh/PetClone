@@ -1,5 +1,5 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 .font-link {
@@ -11,114 +11,133 @@
 }
 
 .modalHome {
-    font-size: 16px;
-    width: 100%;
-    border: solid black 1px;
-    height: 100vh;
-    margin: 0 auto;
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;
-    background-color: #F2D066;
-    padding-left: 1em;
-    padding-right: 1em;
-    
-  }
-  .modalHome > .header {
-    width: 100%;
-    border-bottom: 1px solid rgba(202, 0, 0, 0);
-    font-size: 18px;
-    text-align: center;
-    padding-top: 20px;
-    margin-bottom: -20px;
-  }
-  .modalHome > .content {
-    width: 100%;
-    padding: 0px 5px;
-    text-align: center;
-  }
+  font-size: 16px;
+  width: 100%;
+  border: solid black 1px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F2D066;
+  padding-left: 1em;
+  padding-right: 1em;
   
-  input {
-    width: 50%;
-    height: 10px;
-    background-color: rgb(255, 255, 255);
-    padding-bottom: 1.5em;
-    padding-top: 1.5em;
-    padding-left: 1em;
-    justify-content: space-between;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 1em;
-    margin-top: -10px;
-    border-style: solid;
-  }
-
-input:focus {
-    outline: none !important;
 }
 
-  .email {
-      width: 100%;
-      padding-top: 2;
-      background-color: rgb(255, 255, 255);
-  }
-  .modalHome > .subscribe {
-    width: 100%;
-    padding: 10px 5px;
-    margin: 0 auto;
-    text-align: center;
-  }
+.modalHome > .header {
+  width: 100%;
+  border-bottom: 1px solid rgba(202, 0, 0, 0);
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: -20px;
+}
 
- .subscribeButton {
-    background-color: #6E2594;
-    border: none;
-    color: white;
-    padding: 1em 1em;
-    margin-bottom: 1.5em;
-    font-family: 'Poppins', sans-serif;
-  }
+.modalHome > .content {
+  width: 100%;
+  padding: 0px 5px;
+  text-align: center;
+}
 
-  .nav h1 {
-    display: inline-block;
-    font-size: 3rem;
-    padding: 0 2rem 0 1rem;
-  }
+input {
+  width: 50%;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+  padding-left: 1em;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1em;
+  margin-top: -10px;
+  border-style: solid;
+}
 
-  .userlogo {
-    margin-left: 50px;
-  }
+input:focus {
+  outline: none !important;
+}
 
-  .btn {
-    background-color: #6E2594;
-    border: none;
-    color: white;
-    padding: 0.5em 1em;
-    margin-bottom: 1.5em;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-  }
+.email {
+  width: 100%;
+  padding-top: 2;
+  background-color: rgb(255, 255, 255);
+}
 
-  .submit-footer {
-    background-color: #f2d066;
-    padding: 1rem;
-    font-size: 1.5em;
-    margin-top: 1rem;
-  }
+.modalHome > .subscribe {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  .middle-div p {
-    padding: 0.5rem 0 0.5rem 0;
-  }
+.subscribeButton {
+  background-color: #6E2594;
+  border: none;
+  color: white;
+  padding: 1em 1em;
+  margin-bottom: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .sub-banner {
-    background-color: #c0fdfb;
-    padding: 0.5rem;
-    margin-bottom: 20px;
-  }
+.nav h1 {
+  display: inline-block;
+  font-size: 3rem;
+  padding: 0 2rem 0 1rem;
+}
 
-  .banner-a {
-    text-decoration: none;
-    color: black;
-  }
+.userlogo {
+  margin-left: 50px;
+}
 
-  .privacy a {
-    text-decoration: none;
-    color: black;
-  }
+.btn {
+  background-color: #6E2594;
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+  margin-bottom: 1.5em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.submit-footer {
+  background-color: #f2d066;
+  padding: 1rem;
+  font-size: 1.5em;
+  margin-top: 1rem;
+}
+
+.middle-div p {
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.sub-banner {
+  background-color: #c0fdfb;
+  padding: 0.5rem;
+  margin-bottom: 20px;
+}
+
+.banner-a {
+  text-decoration: none;
+  color: black;
+}
+
+.privacy a {
+  text-decoration: none;
+  color: black;
+}
+
+.heading-image {
+  position: relative;
+}
+
+.heading {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+}
+
+.heading-title {
+  color: #6E2594;
+}
