@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const SubscribeForm = () => {
     const [user, setUser] = useState({
         first_name: '',
@@ -22,7 +23,7 @@ const SubscribeForm = () => {
          <div>
              <form onSubmit={_handleSubmit}>
                  
-                 <input name="first_name" type="text" placeholder="First Name" required onChange={_handleChange} />
+                 <input name="first_name" type="text" min={2} placeholder="First Name" required onChange={_handleChange} />
                  <input name="last_name" type="text" placeholder="Last Name" required onChange={_handleChange} />
                  <input name="email" type="email" placeholder="Email Address" required onChange={_handleChange} />
 

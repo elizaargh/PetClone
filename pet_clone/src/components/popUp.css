@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+
+.modal {
+    font-size: 12px;
+    width: 80%;
+    border: solid black 1px;
+    height: 80vh;
+    margin: 0 auto;
+    /* overflow: scroll; */
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(111, 231, 225);
+    padding-left: 1em;
+    padding-right: 1em;
+    
+  }
+  .modal > .header {
+    width: 100%;
+    border-bottom: 1px solid rgba(202, 0, 0, 0);
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .modal > .content {
+    width: 100%;
+    padding: 0px 5px;
+    text-align: center;
+  }
+  
+  input {
+    width: 50%;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.5em;
+    border-style: solid;
+  }
+
+input:focus {
+    outline: none !important;
+}
+
+  .email {
+      width: 100%;
+      padding-top: 2;
+      background-color: rgb(255, 255, 255);
+  }
+  .modal > .subscribe {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+ 
+    
+  }
+
+  .modal > .subscribe > .subscribeButton {
+    background-color: #6E2594;
+    border: none;
+    color: white;
+    padding: 1em 1em;
+    font-family: 'Poppins', sans-serif;
+  }
+  .modal > .header > .close {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    padding-left: 60%;
+    /* padding-top: -10px; */
+    padding-right: 1px;
+    font-size: 24px;
+    background: none;
+    /* border-radius: 18px; */
+    border: 1px solid #ffffff00; 
+    line-height: 0%;
+
+
+  }
+  
+
+.pretty { 
+    margin-left: 5px;
+    display: flex;
+    width: 100px;
+    align-content: space-around;
+    /* border: 1px solid red; */
+ }
+
+
+
+
