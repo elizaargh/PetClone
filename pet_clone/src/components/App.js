@@ -17,6 +17,10 @@ function App() {
       {/* <DiscountBanner/> */}
       <Home />
       
+    {/* <TestForm/> */}
+    {/* <DiscountBanner/> */}
+    
+
   
 
     </div>

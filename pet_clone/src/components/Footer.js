@@ -6,7 +6,8 @@ import './App.css'
 
 const Footer = (props) => {
     return (
-        <div>
+        <div className="privacy">
+            <p><a href="#">Privacy Policy</a></p>
             <p><a href="#">About Us</a></p>
             <p><a href="#">Contact</a></p>
             <p><a href="#">FAQ</a></p>
