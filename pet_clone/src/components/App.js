@@ -1,5 +1,4 @@
-import SubscribeForm from "./SubscribeForm";
-import JoinUs from "./JoinUs.js";
+import SubscribePopUp from "./SubscribePopUp";
 import Thanks from "./Thanks";
 import EmailPref from "./EmailPref";
 import Home from "./Home";
@@ -7,7 +6,7 @@ import Home from "./Home";
 function App() {
   return (
     <div className="App">
-      <JoinUs/>
+      <SubscribePopUp />
       <Thanks/>
       <EmailPref/>
       <Home />

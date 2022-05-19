@@ -4,7 +4,7 @@ import Popup from 'reactjs-popup';
 import './popUp.css';
 
 
-const JoinUs = () => {
+const SubscribePopUp = () => {
 
     return (
         <Popup
@@ -63,4 +63,4 @@ const JoinUs = () => {
         </Popup>
     )
 }
-export default JoinUs;
+export default SubscribePopUp;
