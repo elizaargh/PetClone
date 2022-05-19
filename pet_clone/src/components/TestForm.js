@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import FormError from "./FormErrors";
+import Popup from 'reactjs-popup';
+import './App.css'
+import SubscribeForm from "./SubscribeForm";
 
 
-const SubscribeForm = (props) => {
+const TestForm = () => {
     const [user, setUser] = useState({
         first_name: '',
         last_name: '',
@@ -81,28 +83,35 @@ const SubscribeForm = (props) => {
         
         return formIsValid;
     }
-    
+
     return (
-        <div>
-            <form onSubmit={_handleSubmit}>
-                
-                <input name="first_name" placeholder="First Name"
-                    onChange={_handleChange} value={user.first_name} />
-                <div>{error.first_name_error}</div>
+      
+        <div className="modalHome">
+                <div className="header"> <h2> Subscribe to stay updated!</h2></div>
+                    <div className="content">
+                    {' '}
+                    <p> To be the first to know about exciting promos & ways to clone your pet!</p>
+                        <br />    <br />
 
-                <input name="last_name" placeholder="Last Name"
-                    onChange={_handleChange} value={user.last_name} />
-                <div>{error.last_name_error}</div>
-                
-                <input name="email" placeholder="Email Address"
-                    onChange={_handleChange} value={user.email} />
-                <div>{error.email_error}</div>
+                    <form onSubmit={_handleSubmit}> 
+                        <input name="first_name" placeholder="first name" onChange={_handleChange} value={user.first_name}/>
+                           
 
-                <button>Subscribe</button>
-            </form>
+                        <input name="last_name" placeholder="last name" onChange={_handleChange} value={user.last_name}></input>
+                            <div>{error.last_name_error}</div> <div>{error.first_name_error}</div>
+                        <br />    
+                        <input name="email" className="email" placeholder="email" onChange={_handleChange} value={user.email}></input>
+                            <div>{error.email_error}</div>
+        
+         
+          
+                    <div className="subscribe"> <button className="subscribeButton">Subscribe</button></div>
+                </form>
+                </div>
+                   
+            <div className="content"> 
+                <a href="">Privacy Policy</a>
+            </div>
         </div>
-    )
-
-}
-
-export default SubscribeForm;
+    )};
+export default TestForm;
