@@ -8,15 +8,14 @@ import TestForm from "./TestForm";
 function App() {
   return (
     <div className="App">
-      Page coming soon.
     <SubscribePopUp />
-    <JoinUs/>
+    {/* <JoinUs/> */}
     <Thanks/>
     <EmailPref/>
     <Gift/>
-    <TestForm/>
-      {/* <DiscountBanner/> */}
-      <Home />
+    {/* <TestForm/> */}
+    {/* <DiscountBanner/> */}
+    <Home />
 
   
 
