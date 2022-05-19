@@ -1,11 +1,11 @@
-import SubscribeForm from "./SubscribeForm";
+import Home from "./Home";
 
 function App() {
   return (
     <div className="App">
       Page coming soon.
       {/* <DiscountBanner/> */}
-      <SubscribeForm/>
+      <Home />
   
 
     </div>
