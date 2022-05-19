@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SubscribeHome from "./SubscribeHome";
 import Popup from 'reactjs-popup';
 import './popUp.css';
 
@@ -6,29 +7,34 @@ import './popUp.css';
 const JoinUs = () => {
 
     return (
-      <Popup
-        trigger={<button className="button"> Open Modal </button>}
-        modal
-        nested
-    >
+        <Popup
+            trigger={<button className="button"> Open Modal </button>}
+            modal
+            nested
+        >
         {close => (
         <div className="modal">
-            
-            <div className="header"><button className="close" onClick={close}>
-            &times;
-            </button> <h2> Subscribe</h2></div>
-            <div className="content">
-            {' '}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
-            Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
-            delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
-            <br />    <br />
-            <input placeholder="first name"></input><input placeholder="last name"></input>
-            <br />    
-           <input className="email" placeholder="email"></input>
+            <div className="header">
+                <button className="close" onClick={close}>&times;</button>
+
+                <SubscribeHome />
+
+                {/* <h2> Subscribe</h2></div>
+                <div className="content">
+                {' '}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
+                Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
+                delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
+                <br />    <br />
+                <input placeholder="first name"></input><input placeholder="last name"></input>
+                <br />    
+                <input className="email" placeholder="email"></input> */}
             </div>
             
-            <div className="subscribe">  <button className="subscribeButton">Subscribe</button></div>
+            {/* <div className="subscribe">
+                <button className="subscribeButton">Subscribe</button>
+            </div> */}
+
             <div className="actions">
             {/* <Popup
                 trigger={<button className="button"> Trigger </button>}
@@ -54,7 +60,7 @@ const JoinUs = () => {
             </div>
         </div>
         )}
-    </Popup>
-        )
+        </Popup>
+    )
 }
 export default JoinUs;
