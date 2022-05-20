@@ -42,7 +42,7 @@ input.invisible {
   }
   
   input {
-    width: 40%;
+    width: 50%;
     height: 10px;
     background-color: rgb(255, 255, 255);
     padding-bottom: 1.5em;
@@ -59,9 +59,9 @@ input:focus {
 }
 
   .email {
-      width: 100%;
+      width: 50%;
       padding-top: 2;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(159, 51, 189);
   }
   .modal > .subscribe {
     width: 100%;
