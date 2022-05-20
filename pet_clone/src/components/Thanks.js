@@ -22,11 +22,14 @@ const Thanks = () => {
             {' '}
            You are now subscribed to hear about us. 
             <br /> Choose when you want to hear from us!   <br />
+        
             </div>
             
             <div className="subscribe">  <button className="subscribeButton">Set Email Preferences</button></div>
             <div className="content">
-                or set this us later from your email <br/>
+                or set this us later from your email <br/><br/>
+                <input className="invisible"></input><input className="invisible"></input>
+                <input name="email" className="email-invisble" placeholder="email"></input>
                 <a href="">Skip to Gift</a></div>
 
             

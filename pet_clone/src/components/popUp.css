@@ -2,13 +2,26 @@
     box-sizing: border-box;
 }
 
+input.invisible {
+  visibility: hidden;
+
+}
+
+.email-invisble{
+  visibility: hidden;
+  background-color: #c7fdfb00;
+  width: 100%;
+  padding-top: 2;
+}
+
 .modal {
     font-size: 16px;
-    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
     border: solid black 1px;
     height: 80vh;
     margin: 0 auto;
-    overflow: scroll;
+    overflow: hidden;
     font-family: 'Poppins', sans-serif;
     background-color: #C7FDFB;
     padding-left: 1em;
@@ -29,12 +42,12 @@
   }
   
   input {
-    width: 50%;
+    width: 40%;
     height: 10px;
     background-color: rgb(255, 255, 255);
     padding-bottom: 1.5em;
     padding-top: 1.5em;
-    padding-left: 1em;
+    padding: 3em;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0.5em;

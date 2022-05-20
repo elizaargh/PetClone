@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Popup from 'reactjs-popup';
 import './popUp.css';
 import SubscribeForm from "./SubscribeForm";
 
 
 const JoinUs = () => {
+  const [land, setLand] = useState("")
+    
+  useEffect(() => {
+    console.log('hello')
+  }, [])
 
     return (
       <Popup

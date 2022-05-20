@@ -3,19 +3,23 @@ import Thanks from "./Thanks";
 import EmailPref from "./EmailPref";
 import Home from "./Home";
 import Gift from "./Gift";
-import TestForm from "./TestForm";
+import JoinUs from "./JoinUs";
 
 function App() {
   return (
     <div className="App">
     <SubscribePopUp />
-    {/* <JoinUs/> */}
+    <JoinUs/>
     <Thanks/>
     <EmailPref/>
     <Gift/>
+    
+      {/* <DiscountBanner/> */}
+      <Home />
+      
     {/* <TestForm/> */}
     {/* <DiscountBanner/> */}
-    <Home />
+    
 
   
 
