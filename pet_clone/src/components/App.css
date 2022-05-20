@@ -126,6 +126,11 @@ input:focus {
   color: black;
 }
 
+.privacy h1 {
+  font-family: 'Abhaya Libre Medium';
+  font-weight: 500;
+}
+
 .heading-image {
   position: relative;
 }
