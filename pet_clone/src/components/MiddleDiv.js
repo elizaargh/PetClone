@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Middle from '../middle-div.svg'
 
 export default function MiddleDiv() {
   return (
@@ -17,7 +18,7 @@ export default function MiddleDiv() {
             What are people saying?
         </h3>
 
-        <img src="https://i.imgur.com/6DjsTSA.png"/>
+        <img src={Middle}/>
 
         <p>
             Lorem ipsum dolor sit amet, consectetur adip<br></br>
