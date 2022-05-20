@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormError from "./FormErrors";
+// import FormError from "./FormErrors";
 
 
 const SubscribeFooter = (props) => {
@@ -90,16 +90,18 @@ const SubscribeFooter = (props) => {
             </div>
             <form onSubmit={_handleSubmit}>
                 
-                <input name="first_name" placeholder="First Name"
+                <input className="submit-form" name="first_name" placeholder="First Name"
                     onChange={_handleChange} value={user.first_name} />
-                <div>{error.first_name_error}</div>
-
-                <input name="last_name" placeholder="Last Name"
-                    onChange={_handleChange} value={user.last_name} />
-                <div>{error.last_name_error}</div>
                 
-                <input name="email" placeholder="Email Address"
+
+                <input className="submit-form" name="last_name" placeholder="Last Name"
+                    onChange={_handleChange} value={user.last_name} />
+                 
+                
+                <input className="submit-form" name="email" placeholder="Email Address"
                     onChange={_handleChange} value={user.email} />
+                <div>{error.first_name_error}</div>
+                <div>{error.last_name_error}</div>
                 <div>{error.email_error}</div>
 
                 <button className="btn">Subscribe</button>

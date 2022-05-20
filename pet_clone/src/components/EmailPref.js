@@ -45,7 +45,7 @@ const EmailPref = () => {
                     <Checkbox bigger color="warning">Pet Blog</Checkbox>
                     <Checkbox bigger animation="pulse" color="warning">DIY tips</Checkbox>
                   
-                <input name="email" className="email-invisble" placeholder="email"></input>
+                <input name="email" className="email-invisble" placeholder="email: example.gmail.com"></input>
                 </div> 
              
                 <div className="subscribe">  

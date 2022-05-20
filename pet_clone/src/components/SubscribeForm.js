@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import FormError from "./FormErrors";
 
 
 const SubscribeForm = (props) => {
@@ -47,7 +46,7 @@ const SubscribeForm = (props) => {
 
         if (user["first_name"].length < 2) {
             formIsValid = false;
-            error["first_name_error"] += "*Please a name must be at least two letters.";
+            error["first_name_error"] = "*Please a name must be at least two letters.";
             console.log('3')
         }
 
@@ -86,19 +85,21 @@ const SubscribeForm = (props) => {
         <div>
             <form onSubmit={_handleSubmit}>
                 
-                <input name="first_name" placeholder="First Name"
+                <input className="submit-form" name="first_name" placeholder="First Name"
                     onChange={_handleChange} value={user.first_name} />
-                <div>{error.first_name_error}</div>
+               
 
-                <input name="last_name" placeholder="Last Name"
+                <input  className="submit-form"  name="last_name" placeholder="Last Name"
                     onChange={_handleChange} value={user.last_name} />
-                <div>{error.last_name_error}</div>
+                    
                 
-                <input name="email" placeholder="Email Address"
+                <input  className="submit-form"  name="email" placeholder="Email e.g example.gmail.com"
                     onChange={_handleChange} value={user.email} />
-                <div>{error.email_error}</div>
+                <div className="error">{error.first_name_error}</div>
+                <div className="error">{error.last_name_error}</div>
+                <div className="error">{error.email_error}</div>
 
-                <button>Subscribe</button>
+                <button className="subscribeButton">Subscribe</button>
             </form>
         </div>
     )

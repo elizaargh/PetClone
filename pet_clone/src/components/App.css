@@ -329,3 +329,13 @@ input.email {
   height: 3em;
   text-align: center;
 }
+
+.error {
+  color: red;
+  padding-bottom: 1em;
+  font-style: italic;
+}
+
+input.submit-form {
+  font-style: italic;
+}
