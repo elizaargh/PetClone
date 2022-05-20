@@ -16,14 +16,35 @@ const SubscribeForm = (props) => {
     };
 
     const _handleSubmit = (event) => {
+        const data = user
         event.preventDefault();
         if (validateForm()) {
-            setUser((prevStates) => ({
-                ...prevStates, [event.target.name]: event.target.value
-            }))
-            // alert('Form submitted');
+            fetch(`http://localhost:3000/user`, {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            })
+            .then(resp => resp.json())
+            .then(data => {
+                setUser((prevStates) => ({
+                    ...prevStates, [event.target.name]: event.target.value
+                }))
+                alert('Form submitted');
+            })
         }
     }
+
+    // const _handleSubmit = (event) => {
+    //     event.preventDefault();
+    //     if (validateForm()) {
+            // setUser((prevStates) => ({
+            //     ...prevStates, [event.target.name]: event.target.value
+            // }))
+    //         // alert('Form submitted');
+    //     }
+    // }
 
 
     const validateForm = function () {
