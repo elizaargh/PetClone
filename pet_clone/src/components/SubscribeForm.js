@@ -17,14 +17,35 @@ const SubscribeForm = (props) => {
     };
 
     const _handleSubmit = (event) => {
+        const data = user
         event.preventDefault();
         if (validateForm()) {
-            setUser((prevStates) => ({
-                ...prevStates, [event.target.name]: event.target.value
-            }))
-            // alert('Form submitted');
+            fetch(`http://localhost:3000/user`, {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            })
+            .then(resp => resp.json())
+            .then(data => {
+                setUser((prevStates) => ({
+                    ...prevStates, [event.target.name]: event.target.value
+                }))
+                alert('Form submitted');
+            })
         }
     }
+
+    // const _handleSubmit = (event) => {
+    //     event.preventDefault();
+    //     if (validateForm()) {
+            // setUser((prevStates) => ({
+            //     ...prevStates, [event.target.name]: event.target.value
+            // }))
+    //         // alert('Form submitted');
+    //     }
+    // }
 
 
     const validateForm = function () {
@@ -86,19 +107,21 @@ const SubscribeForm = (props) => {
         <div>
             <form onSubmit={_handleSubmit}>
                 
-                <input name="first_name" placeholder="First Name"
+                <input className="submit-form" name="first_name" placeholder="First Name"
                     onChange={_handleChange} value={user.first_name} />
-                <div>{error.first_name_error}</div>
+               
 
-                <input name="last_name" placeholder="Last Name"
+                <input  className="submit-form"  name="last_name" placeholder="Last Name"
                     onChange={_handleChange} value={user.last_name} />
-                <div>{error.last_name_error}</div>
+                    
                 
-                <input name="email" placeholder="Email Address"
+                <input  className="submit-form"  name="email" placeholder="Email e.g example.gmail.com"
                     onChange={_handleChange} value={user.email} />
-                <div>{error.email_error}</div>
+                <div className="error">{error.first_name_error}</div>
+                <div className="error">{error.last_name_error}</div>
+                <div className="error">{error.email_error}</div>
 
-                <button>Subscribe</button>
+                <button className="subscribeButton">Subscribe</button>
             </form>
         </div>
     )

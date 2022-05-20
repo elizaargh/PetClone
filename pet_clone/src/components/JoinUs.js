@@ -11,11 +11,14 @@ const JoinUs = (props) => {
       <Popup open={props.joinUsState} closeOnDocumentClick onClose={closeJoinUs}>
         <div className="modal">
           <a className="close" onClick={closeJoinUs}>&times;</a>
-          <div className="header">Subscribe to stay updated</div>
+          <br/>
+          <div className="header">Subscribe to <br/>stay updated</div>
           <div className="content">
+            <br/>
             <p> To be the first to know about exciting promos & ways to clone your pet!</p>
             <SubscribeForm />
             <p><a href="">Privacy Policy</a></p>
+            
           </div>
         </div>
       </Popup>

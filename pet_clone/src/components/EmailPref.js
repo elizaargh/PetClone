@@ -21,9 +21,9 @@ const EmailPref = () => {
             <div className="header"><h2> Set Email Preferences</h2></div>
             <div className="content">
             {' '}
-            How often do you want to hear from us?
+            How often do you want to<br /> hear from us?
             <br /> <br/>
-            <select name="selectTimes">
+            <select className="dropdown" name="selectTimes">
                 <option>Weekly</option>
                 <option>Fortnightly</option>
                 <option>Twice a week</option>
@@ -36,20 +36,22 @@ const EmailPref = () => {
             
            
             <br />
+
+        
                <div className="checkers"> 
                     <Checkbox bigger color="primary">Everything</Checkbox>
                     <Checkbox bigger animation="pulse" color="info-o">Promotions</Checkbox>
                     <br />
                     <Checkbox bigger color="warning">Pet Blog</Checkbox>
                     <Checkbox bigger animation="pulse" color="warning">DIY tips</Checkbox>
+                  
+                <input name="email" className="email-invisble" placeholder="email: example.gmail.com"></input>
                 </div> 
-                <br /> 
-                <input className="invisible"></input><input className="invisible"></input>
-                <input name="email" className="email-invisble" placeholder="email"></input>
+             
                 <div className="subscribe">  
-                    <button className="subscribeButton">Subscribe</button>
+                    <button className="subscribeButton">Set My Preferences</button>
                 </div>
-              
+              <a href="#" className="popup-link">Skip to the Gift</a>
                 </div>
        
         )}
