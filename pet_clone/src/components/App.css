@@ -285,11 +285,13 @@ input:focus {
 .privacy a {
   text-decoration: none;
   color: black;
+  padding: 0.5em;
 }
 
 .privacy h1 {
   font-family: 'Abhaya Libre Medium';
   font-weight: 500;
+  font-size: 35px;
 }
 
 .heading {
