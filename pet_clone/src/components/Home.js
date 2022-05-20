@@ -1,6 +1,6 @@
 import SubscribeBanner from "./SubscribeBanner";
 import Navigation from "./Navigation";
-import Heading1 from "../heading1.svg"
+import Heading from "./Heading";
 import SubscribeFooter from "./SubscribeFooter";
 import MiddleDiv from './MiddleDiv';
 import Footer from "./Footer";
@@ -10,13 +10,10 @@ import Layout from "./Layout";
 const Home = (props) => {
   return (
     <div>
-      {/* <SubscribeBanner /> */}
-      <Navigation/>
-      {/* <Layout/>  */}
- 
-      <img src={Heading1} width="500" height="500" />
+       <SubscribeBanner />
+      <Navigation />
+      <Heading />
       <MiddleDiv/>
-      {/* <SubscribeFooter/>    */}
       <TestForm/>
       <Footer />
     </div>

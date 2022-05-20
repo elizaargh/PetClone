@@ -42,12 +42,12 @@ input.invisible {
   }
   
   input {
-    width: 50%;
+    width: 40%;
     height: 10px;
     background-color: rgb(255, 255, 255);
     padding-bottom: 1.5em;
     padding-top: 1.5em;
-    padding-left: 1em;
+    padding: 3em;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0.5em;
