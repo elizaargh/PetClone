@@ -47,7 +47,7 @@ const SubscribeForm = (props) => {
 
         if (user["first_name"].length < 2) {
             formIsValid = false;
-            error["first_name_error"] += "*Please a name must be at least two letters.";
+            error["first_name_error"] = "*Please a name must be at least two letters.";
             console.log('3')
         }
 

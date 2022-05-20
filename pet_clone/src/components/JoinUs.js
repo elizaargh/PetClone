@@ -1,45 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import SubscribeForm from "./SubscribeForm";
 import Popup from 'reactjs-popup';
 import './popUp.css';
-import SubscribeForm from "./SubscribeForm";
+// import SubscribePopUp from "./SubscribePopUp";
 
 
-const JoinUs = () => {
-  const [land, setLand] = useState("")
-    
-  useEffect(() => {
-    console.log('hello')
-  }, [])
-
-    return (
-      <Popup
-        trigger={<button className="button"> Subscribe </button>}
-        modal
-        nested
-    >
-        {close => (
+const JoinUs = (props) => {
+  const closeJoinUs = () => {props.joinUsClose(false)}
+  
+  return (
+    <div>
+      <Popup open={props.joinUsState} closeOnDocumentClick onClose={closeJoinUs}>
         <div className="modal">
-            <button className="close" onClick={close}>
-            &times;
-            </button>
-            <div className="header"> <h2> Subscribe to <br/>stay updated</h2></div>
-            <div className="content">
-            {' '}
+          <a className="close" onClick={closeJoinUs}>&times;</a>
+          <div className="header">Subscribe to stay updated</div>
+          <div className="content">
             <p> To be the first to know about exciting promos & ways to clone your pet!</p>
-            <br />    <br />
-            <input placeholder="first name"></input><input placeholder="last name"></input>
-            <br />    
-           <input className="email" placeholder="email"></input>
-            </div>
-            
-            <button className="subscribeButton">Subscribe</button>
-                <div className="content"> 
-         
-              <a href="">Privacy Policy</a>
-            </div>
+            <SubscribeForm />
+            <p><a href="">Privacy Policy</a></p>
+          </div>
         </div>
-        )}
-    </Popup>
-        )
+      </Popup>
+    </div>
+  )
 }
 export default JoinUs;
