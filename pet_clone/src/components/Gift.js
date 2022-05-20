@@ -18,16 +18,20 @@ const Gift = () => {
             </button> 
             <br/>
              <div className="content">Your email preferences have been saved!</div>
-            <div className="header"><h2> Enjoy our gift to you! </h2></div>
+             
+            <div className="header"><h1>🎁</h1><h2> Enjoy our gift to you! </h2></div>
+
             <div className="content">
             {' '}
             Copy this code to your basket to receive 20% off your order!
             <br />    <br />
-            <input value="WELCOME10"></input> <button className="copyButton">Copy</button>
+                
+            <input className="welcome" value="WELCOME10"></input><button className="copyButton">Copy</button>
             <br />    
             </div>
             
-            <div className="subscribe">  <button className="subscribeButton">Continue Shopping</button></div>
+            <div className="subscribe">  
+            <button onClick={() => navigator.clipboard.writeText('WELCOME10')} className="subscribeButton">Continue Shopping</button></div>
             <div className="actions">
             
           

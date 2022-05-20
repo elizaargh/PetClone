@@ -25,7 +25,7 @@ const JoinUs = () => {
             <div className="header"> <h2> Subscribe to <br/>stay updated</h2></div>
             <div className="content">
             {' '}
-            <p> To be the first to know about exciting promos & ways to clone your pet!</p><span> fix this padding</span> 
+            <p> And be the first to know about exciting promos & ways to clone your pet!</p> 
             <br />    <br />
             <input placeholder="first name"></input> <input placeholder="last name"></input>
             <br />    
