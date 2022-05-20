@@ -13,7 +13,7 @@ const Gift = () => {
     >
         {close => (
         <div className="modal">
-            <button className="close" onClick={close}>
+            <button id="hideUs" className="close" onClick={close}>
             &times;
             </button> 
             <br/>
