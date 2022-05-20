@@ -12,9 +12,9 @@ const Navigation = (props) => {
     //    </>
 
         <nav className="nav">
-            <img src={PetLogo} width="60" height="60" />
+            <img src={PetLogo} className="logo" />
             <h1>My Pet 2.0</h1>
-            <img className="userlogo" src={UserLogo} width="60" height="60" />
+            <img className="userlogo" src={UserLogo} />
         </nav>
     );
   }
