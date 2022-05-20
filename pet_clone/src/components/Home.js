@@ -6,6 +6,7 @@ import Heading from "./Heading";
 import MiddleDiv from './MiddleDiv';
 import Footer from "./Footer";
 import TestForm from "./TestForm";
+import SubscribeFooter from "./SubscribeFooter";
 
 const Home = (props) => {
   const [joinUs, setJoinUs] = useState(true);

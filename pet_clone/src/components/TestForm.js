@@ -99,7 +99,7 @@ const TestForm = () => {
 
                         <input name="last_name" placeholder="last name" onChange={_handleChange} value={user.last_name}></input>
                             <div>{error.last_name_error}</div> <div>{error.first_name_error}</div>
-                        <br />    
+                       
                         <input name="email" className="email" placeholder="email" onChange={_handleChange} value={user.email}></input>
                             <div>{error.email_error}</div>
         
