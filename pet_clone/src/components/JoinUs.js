@@ -2,8 +2,6 @@ import React from "react";
 import SubscribeForm from "./SubscribeForm";
 import Popup from 'reactjs-popup';
 import './popUp.css';
-// import SubscribePopUp from "./SubscribePopUp";
-
 
 const JoinUs = (props) => {
   const closeJoinUs = () => {props.joinUsClose(false)}
